@@ -1,0 +1,530 @@
+:root {
+    --cor-1: #504e4d; 
+    --cor-2: #0b0b0c; 
+    --cor-3: #2c5aac; 
+    --cor-4: #ce3835;
+    --cor-5: #9c9fa0; 
+    --cor-6: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-2);
+    color: aliceblue;
+}
+
+img[ alt= GIF-topo]{
+    width: 48px;
+    
+  }
+  header{
+    background-image: url(imagens-barbearia/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    height: 750px;
+    
+  }
+  .head,.navegar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navegar{
+    gap: 3em;
+    z-index: 2;
+  }
+  .head{
+    background-color: var(--cor-1);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 6.5em;
+    box-shadow: 1px 1px 4px var(--cor-3);
+    }
+.menu{
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    
+   }
+
+   .menu:disabled {
+    pointer-events: none;
+   }
+   
+   .menu:hover {
+    color: var(--cor-3);
+    background-color: var(--cor-4);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .menu:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+.gif-1{
+    filter: contrast(50%)
+}
+
+.banner{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.texto-banner{
+  font-size: 3em;
+  margin-top: 20px;
+  text-wrap: balance;
+  color: var(--cor-3);
+  background-color: var(--cor-2);
+}
+
+img[alt= barearia]{
+  width: 80%;
+  height: auto;
+}
+.barbaria2{
+  width: 200px;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre-nos{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  text-wrap: balance;
+  display: flex;
+  font-weight: bold;
+}
+
+.titulo1{
+color: var(--cor-3);
+box-shadow: 1px 2px 1px var(--cor-4);
+}
+.titulo2{
+  padding: 15px;
+  color: var(--cor-5);
+}
+.texto-sibreNos{
+  padding: 16px;
+}
+
+.carrossel-conteiner{
+  position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    top: 10px;
+    
+}
+.carrosel{
+  position: relative;
+}
+
+
+.slid{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slid-foto{
+  min-width: 100%;
+  height: 590px;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+img[alt= slid1],img[ alt= slid2],img[alt= slid3],img[alt= slid4],img[alt= slid8]{
+width: 90%;
+height: 500px;
+}
+
+.prev{
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+#BTN1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.prev:hover{
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--cor-4);
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointer;
+}
+
+.next:hover{
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--cor-4);
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointe
+} 
+
+.roda-pe{
+  background-color: black;
+  color: var(--cor-5);
+  font-family: sans-serif;
+  text-align: center;
+ padding: 40px;
+}
+.container-rodape{
+  display: inline-block;
+  padding: 20px;
+  border: solid 5px var(--cor-4);
+  background-image: url(imagens-barbearia/fundo.jpg);
+}
+
+.titulo-rodape1{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: var(--cor-3);
+}
+.horario {
+  margin-top: 20px;
+}
+.titulo-rodape2{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--cor-3);
+}
+
+.texto-rodape,.texto-rodape2{
+color: antiquewhite;
+}
+
+img[alt= cabeloP2],img[alt=barbap2] {
+  width: 50%;
+  height: 510px;
+  object-fit: cover; 
+  
+}
+
+.conteiner-serviço{
+  position: absolute;
+  top: 0;
+  display: flex;
+ justify-content: space-between;
+}
+.titulo1-P2{
+  position: absolute;
+  left: 17%;
+  margin-left: 10px;
+  top: 30%;
+  display: flex;
+ justify-content: space-between;
+ font-size: 4.5em;
+ text-align: center;
+ font-weight: bold;
+}
+
+.titulo2-P2{
+  position: absolute;
+  right: 20%;
+  margin-left: 10px;
+  top: 40%;
+  display: flex;
+ justify-content: space-between;
+ font-size: 4.5em;
+ text-align: center;
+}
+
+.BTN1-P2{
+  position: absolute;
+  left: 18%;
+  margin-left: 10px;
+  top: 60%;
+  display: flex;
+ justify-content: space-between;
+ text-align: center;
+ font-weight: bold;
+
+ border: none;
+  outline: none;
+  background-color: var(--cor-3);
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px var(--cor-3);
+  cursor: pointer;
+}
+
+.BTN1-P2:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px var(--cor-5)
+}
+
+.BTN2-P2{
+  position: absolute;
+  right: 25%;
+  margin-left: 10px;
+  top: 60%;
+  display: flex;
+ justify-content: space-between;
+ text-align: center;
+ border: none;
+  outline: none;
+  background-color: var(--cor-3);
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px var(--cor-3);
+  cursor: pointer;
+}
+.BTN3-P2{
+  color: var(--cor-6);
+   text-decoration: none;
+}
+
+.BTN2-P2:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px var(--cor-5)
+}
+
+.conteinerCabelo-pagina2{
+  position: absolute;
+  top: 100%;
+  padding: 20px;
+}
+.card-info{
+display: flex;
+}
+.details-info{
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--cor-3); 
+  text-shadow: 3px 3px 0 var(--cor-6);
+  cursor: pointer;
+}
+.texto-info,.detalis{
+gap: 500px;
+padding: 7px;
+font-weight: bold;
+
+}
+.titulo-info{
+  font-size: 40px;
+  font-weight: bold;
+ color: var(--cor-3);
+ }
+  
+
+ .conteinerBarba-pagina2{
+  position: absolute;
+  top: 200%;
+  padding: 0px;
+  right: 0%;
+  margin-left: 10px;
+ justify-content: space-between;
+ font-size: 3.5em;
+ display: flex;
+ flex-direction: row-reverse;
+ }
+
+ .details2{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.details-info2{
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--cor-4); 
+  text-shadow: 3px 3px 0 var(--cor-6);
+  cursor: pointer;
+}
+.titulo-info2{
+  font-size: 25px;
+  font-weight: bold;
+ color: var(--cor-4);
+ padding: 4px;
+ gap: 5px;
+}
+
+img[alt= corte]{
+  border: solid var(--cor-3);
+  box-shadow: 0 8px 20px rgba(50, 90, 172, 0.7); 
+  background-color: var(--cor-6)
+}
+
+
+img[alt= barba]{
+  border: solid var(--cor-4);
+  box-shadow: 0 4px 10px rgba(206, 56, 53, 0.5); 
+  background-color: var(--cor-6)
+}
+
+.agendamento{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center
+}
+
+
+.form-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-section label {
+  margin-bottom: 5px;
+  color: var(--cor-3);
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  border-color: #777;
+  outline: none;
+}
+
+.form-section button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #555;
+}
+
+.image-section {
+  width: 50%;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.titulo-agenda{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 140px;
+  position: relative;
+  color: var(--cor-6);
+  background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+  background-clip: text;
+  -webkit-text-stroke: 0.05em transparent;
+  letter-spacing: 2px;
+}
+.titulo-agenda::before{
+  content: 'AGENDE SEU HORÁRIO';
+  position: absolute;
+  left: 0;
+  transform: translate(-20px, -20px);
+  z-index: -1;
+  background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+  background-clip: text;
+  -webkit-text-stroke: 0.02em transparent;
+  padding: 15px;
+}
+.conteiner-cadastro{
+ background-color: var(--cor-2);
+ text-align: center;
+}
+
+#sobr,#id-cabelo,#id-barba,#agenda,#serviços-id{
+  scroll-behavior: smooth; 
+  scroll-padding: 30px
+}
+
+
+ 
+ 
+ 
+ 
